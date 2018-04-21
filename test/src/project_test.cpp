@@ -3,9 +3,9 @@
 
 #include "class_file.hpp"
 
-namespace project_namespace
+namespace project_ns::test
 {
-
+using namespace project_ns;
 
 namespace
 {
@@ -14,7 +14,7 @@ constexpr auto CONSTANT = 42;
 
 TEST(project_test, test1)
 {
-    EXPECT_EQ(42, function());
+    EXPECT_EQ(CONSTANT, function());
 }
 
 }

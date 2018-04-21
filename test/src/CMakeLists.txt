@@ -9,6 +9,7 @@ target_link_libraries(test_src
     libgtest
     libgmock
     project_lib
+    additional_lib
 )
 
 install(TARGETS test_src DESTINATION bin)
